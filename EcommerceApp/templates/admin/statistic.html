@@ -1,0 +1,21 @@
+{%extends 'admin/base_site.html'%}
+{%block extrahead%}
+<script defer id="libChart" defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="http://127.0.0.1:8000/static/admin/js/statistic.js"></script>
+
+{%endblock%}
+{%block content%}
+
+    <meta id="my-user" data-name="{{user.username}}" data-other="{{user.password}}" />
+    <select id='choosedYear'>
+    </select>
+    <select id='choosedType'>
+        <option value='bar'>bar</option>
+        <option value='line'>line</option>
+    </select>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+{% endblock %}s
