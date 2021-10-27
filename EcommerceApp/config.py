@@ -5,8 +5,8 @@ configmomo = dict(
     partnerCode= "MOMOUR2S20210830",
     accessKey= "zV8bQQqebfkOpXm8",
     serectKey= "URjMechix19xzhkqAP7Ev1Zhqyo5ZWEt",
-    redirectUrl= 'http://nervous-cougar-61.loca.lt/order/',
-    ipnUrl= "http://5b77-27-3-240-77.ngrok.io/notifymomo/",
+    redirectUrl= 'https://ecommerceapp1507.herokuapp.com/order/',
+    ipnUrl= "https://ecommerce1507server.herokuapp.com/notifymomo/",
 )
 
 def create_signature(rawSignature):
